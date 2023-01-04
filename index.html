@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heart Beat</title>
+
+    <link rel="stylesheet" href="https://qqqqqcy.github.io/heart_beat/css/style.css" />
+  </head>
+  <body>
+
+    <script src="https://qqqqqcy.github.io/heart_beat/js/three.min.js"></script>
+    <script src="https://qqqqqcy.github.io/heart_beat/js/MeshSurfaceSampler.js"></script>
+    <script src="https://qqqqqcy.github.io/heart_beat/js/TrackballControls.js"></script>
+    <script src="https://qqqqqcy.github.io/heart_beat/js/simplex-noise.js"></script>
+    <script src="https://qqqqqcy.github.io/heart_beat/js/OBJLoader.js"></script>
+    <script src="https://qqqqqcy.github.io/heart_beat/js/gsap.min.js"></script>
+    <script src="https://qqqqqcy.github.io/heart_beat/js/script.js"></script>
+
+
+
+
+
+  <audio id="bgmusic" src="http://music.163.com/song/media/outer/url?id=2011798194.mp3" controls autoplay="autoplay" loop="loop" style="display: block; width: 3%; height:3%;"></audio>
+    <script type="text/javascript">
+  function toggleSound() {
+            var music = document.getElementById("bgmusic");//获取ID
+                console.log(music);
+                console.log(music.paused);
+            if (music.paused) { //判读是否播放
+                music.paused=false;
+                music.play(); //没有就播放
+            }
+
+        }
+setInterval("toggleSound()",1);
+</script>
+  </body>
+</html>
